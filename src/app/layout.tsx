@@ -29,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
         {/* GTM Script */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
@@ -47,7 +48,7 @@ export default function RootLayout({
             height="0"
             width="0"
             className="gtm-iframe"
-          />
+          ></iframe>
         </noscript>
 
         {children}
