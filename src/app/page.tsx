@@ -60,18 +60,16 @@ export default function Home() {
             */}
             {(() => {
               const tools = [
-                'HTML 5','CSS 3','SASS/SCSS','Bootstrap','PHP','MySQL','PostgreSQL',
-                'Python','JavaScript','jQuery','Next.js','TypeScript','Node.js','ReactJS','Electron',
-                'WordPress','CodeIgniter','Laravel','Git/Github','VS Code',
-                'Blender 3D','GNU/Linux','FreeBSD','Cybersecurity'
+                'HTML 5','CSS 3','SASS/SCSS','Bootstrap','PHP','Python','JavaScript','TypeScript',
+                'ReactJS','Next.js','Node.js','jQuery','Electron','WordPress','CodeIgniter','Laravel',
+                'MySQL','PostgreSQL','Git/Github','VS Code','Blender 3D','GNU/Linux','FreeBSD','Cybersecurity'
               ];
               const images = [
                 'icon_html5.svg','icon_css3.svg','icon_sass.svg','icon_bootstrap.svg','icon_php.svg',
-                'icon_mysql.svg','icon_postgresql.svg','icon_python.svg','icon_javascript.svg',
-                'icon_jquery.svg','icon_nextjs.svg','icon_typescript.svg','icon_nodejs.svg',
-                'icon_reactjs.svg','icon_electron.svg','icon_wordpress.svg','icon_codeigniter.svg',
-                'icon_laravel.svg','icon_github.svg','icon_vscode.svg','icon_photoshop.svg',
-                'icon_linux.svg','icon_freebsd.svg','icon_cybersecurity.svg'
+                'icon_python.svg','icon_javascript.svg','icon_typescript.svg','icon_reactjs.svg','icon_nextjs.svg',
+                'icon_nodejs.svg','icon_jquery.svg','icon_electron.svg','icon_wordpress.svg','icon_codeigniter.svg',
+                'icon_laravel.svg','icon_mysql.svg','icon_postgresql.svg','icon_github.svg','icon_vscode.svg',
+                'icon_blender.svg','icon_linux.svg','icon_freebsd.svg','icon_cybersecurity.svg'
               ];
               return (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
