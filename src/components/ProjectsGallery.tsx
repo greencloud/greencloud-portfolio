@@ -41,12 +41,12 @@ export default function ProjectsGallery() {
               setOpen(true);
             }}
           >
-            <div className="relative h-48 bg-gray-200">
+            <div className="relative h-58 bg-gray-200">
               <Image
                 src={p.thumbnail}
                 alt={p.title}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
 

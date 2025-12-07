@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, #__next { height: 100%; }
 
 /* small extras to match look */
