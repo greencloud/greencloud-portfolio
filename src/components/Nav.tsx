@@ -9,7 +9,7 @@ export default function Nav() {
           <span className="font-semibold">meaPERITIA</span>
         </div>
         <nav className="hidden md:flex gap-6 text-md">
-          <Link href="#home" className="hover:underline">Home</Link>
+          <Link href="/" className="hover:underline">Home</Link>
           <Link href="#about" className="hover:underline">About</Link>
           <Link href="#skills" className="hover:underline">Tech Stack</Link>
           <Link href="#projects" className="hover:underline">Projects</Link>

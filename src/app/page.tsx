@@ -24,14 +24,14 @@ export default function Home() {
               <p className="text-lg text-gray-700 mb-6">Transforming ideas into scalable, dynamic, and user-friendly platforms.</p>
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h2 className="text-2xl font-semibold">Hello, my name is Garry,</h2>
-                <p className="text-xl text-indigo-700 font-medium">Full Stack Developer</p>
+                <h2 className="text-2xl font-semibold">Hi, my name is Garry,</h2>
+                <p className="text-2xl text-indigo-800 font-medium">Full Stack Developer</p>
                 <hr className="my-4" />
-                <p className="text-sm text-gray-600">I specialize in developing custom dynamic web-based applications designed to meet the unique needs of businesses of all sizes—from small local companies to enterprise-level organizations. Leveraging my expertise in Node.js, Express, MySQL2, PHP, and Python, combined with modern front-end tools like Bootstrap 5, LiquidJS, and jQuery, I create solutions that are not only visually polished but also secure, scalable, and optimized for performance.</p>
+                <p className="text-sm text-gray-600">I specialize in developing custom dynamic web-based applications designed to meet the unique needs of businesses of all sizes—from small local companies to enterprise-level organizations. Leveraging my expertise in React, NEXT.js, Node.js, Express, MySQL, PostgreSQL, PHP, and Python, combined with modern front-end tools like Bootstrap, Tailwind CSS, LiquidJS, and jQuery, I create solutions that are not only visually polished but also secure, scalable, and optimized for performance.</p>
 
                 <div className="mt-4">
                   <a href="#connect" className="inline-block px-4 py-2 bg-indigo-600 text-white rounded-lg mr-2">Let's talk</a>
-                  <a href="#projects" className="inline-block px-4 py-2 border rounded-lg">See projects</a>
+                  <a href="#projects" className="inline-block px-4 py-2 border border-gray-300 rounded-lg">See projects</a>
                 </div>
               </div>
             </div>
@@ -61,13 +61,17 @@ export default function Home() {
             {(() => {
               const tools = [
                 'HTML 5','CSS 3','SASS/SCSS','Bootstrap','PHP','MySQL','PostgreSQL',
-                'Python','JavaScript','jQuery','Next.js','Node.js','ReactJS','Electron',
-                'WordPress','CodeIgniter','Laravel','Git/Github','VS Code','Photoshop','Blender 3D','GNU/Linux','FreeBSD','Cybersecurity'
+                'Python','JavaScript','jQuery','Next.js','TypeScript','Node.js','ReactJS','Electron',
+                'WordPress','CodeIgniter','Laravel','Git/Github','VS Code',
+                'Blender 3D','GNU/Linux','FreeBSD','Cybersecurity'
               ];
               const images = [
-                'icon_html5.svg','icon_css3.svg','icon_sass.svg','icon_bootstrap.svg','icon_php.svg','icon_mysql.svg','icon_postgresql.svg',
-                'icon_python.svg','icon_javascript.svg','icon_jquery.svg','icon_nextjs.svg','icon_nodejs.svg','icon_reactjs.svg','icon_electron.svg',
-                'icon_wordpress.svg','icon_codeigniter.svg','icon_laravel.svg','icon_github.svg','icon_vscode.svg','icon_photoshop.svg','icon_blender.svg','icon_linux.svg','icon_freebsd.svg','icon_cybersecurity.svg'
+                'icon_html5.svg','icon_css3.svg','icon_sass.svg','icon_bootstrap.svg','icon_php.svg',
+                'icon_mysql.svg','icon_postgresql.svg','icon_python.svg','icon_javascript.svg',
+                'icon_jquery.svg','icon_nextjs.svg','icon_typescript.svg','icon_nodejs.svg',
+                'icon_reactjs.svg','icon_electron.svg','icon_wordpress.svg','icon_codeigniter.svg',
+                'icon_laravel.svg','icon_github.svg','icon_vscode.svg','icon_photoshop.svg',
+                'icon_linux.svg','icon_freebsd.svg','icon_cybersecurity.svg'
               ];
               return (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
@@ -104,9 +108,9 @@ export default function Home() {
 
             <div className="space-y-2">
               <p>San Pablo, Santo Tomas City, Batangas</p>
-              <p><a href="mailto:groot@sectorzlabs.com" className="text-indigo-600">groot@sectorzlabs.com</a></p>
+              <p><a href="mailto:greencloud@linuxmail.org" className="text-indigo-600">greencloud@linuxmail.org</a></p>
               <p>(+63) 939-738-1182</p>
-              <p><a href="https://m.me/aureliusrasmus" className="hover:underline">m.me/aureliusrasmus</a> · <a href="https://t.me/SectorZLabs" className="hover:underline">t.me/SectorZLabs</a></p>
+              <p><a href="https://m.me/aureliusrasmus" className="hover:underline">m.me/aureliusrasmus</a> &bull; <a href="https://t.me/SectorZLabs" className="hover:underline">t.me/SectorZLabs</a></p>
             </div>
 
           </div>
