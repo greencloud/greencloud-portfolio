@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Head>
         <title>meaPERITIA — Garry Molleno Jr.</title>
-        <meta name="description" content="Full Stack Developer — Node.js, Express, MySQL2, PHP, Python, Bootstrap, LiquidJS, jQuery" />
+        <meta name="description" content="Explore the portfolio of Garry Molleno Jr., a web developer specializing in custom dynamic web-based applications. Discover expertise in modern web technologies, recent projects, and professional digital solutions tailored for businesses of any scale." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
