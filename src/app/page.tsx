@@ -123,7 +123,7 @@ export default function Home() {
                   role="dialog"
                 >
                   <div
-                    className="bg-white rounded-lg shadow-lg p-8 max-w-[500px] w-full relative flex flex-col items-center mx-1.5 mt-[100px] mb-[100px]"
+                    className="bg-white rounded-lg shadow-lg p-8 max-w-[500px] w-full relative flex flex-col items-center mx-6 mt-[100px] mb-[100px]"
                     onClick={e => e.stopPropagation()}
                   >
                     <button
