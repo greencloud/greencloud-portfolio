@@ -6,7 +6,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold">G</div>
-          <span className="text-2xl font-semibold">meaPERITIA</span>
+          <a href="/"><span className="text-2xl font-semibold">meaPERITIA</span></a>
         </div>
         <nav className="hidden md:flex gap-6 text-md">
           <Link href="/" className="hover:underline">Home</Link>
