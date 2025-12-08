@@ -32,7 +32,7 @@ export default function Home() {
                 <p className="text-sm text-gray-600">I specialize in developing custom dynamic web-based applications designed to meet the unique needs of businesses of all sizes—from small local companies to enterprise-level organizations. Leveraging my expertise in React, NEXT.js, Node.js, Express, MySQL, PostgreSQL, PHP, and Python, combined with modern front-end tools like Bootstrap, Tailwind CSS, LiquidJS, and jQuery, I create solutions that are not only visually polished but also secure, scalable, and optimized for performance.</p>
 
                 <div className="mt-4">
-                  <a href="#connect" className="inline-block px-4 py-2 bg-indigo-600 text-white rounded-lg mr-2">Let's talk</a>
+                  <a href="#connect" className="inline-block px-4 py-2 bg-indigo-800 text-white rounded-lg mr-2">Let's talk</a>
                   <a href="#projects" className="inline-block px-4 py-2 border border-gray-300 rounded-lg">See projects</a>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function Home() {
                   role="dialog"
                 >
                   <div
-                    className="bg-white rounded-lg shadow-lg p-8 max-w-[500px] w-full relative flex flex-col items-center mt-[100px] mb-[100px]"
+                    className="bg-white rounded-lg shadow-lg p-8 max-w-[500px] w-full relative flex flex-col items-center mx-1.5 mt-[100px] mb-[100px]"
                     onClick={e => e.stopPropagation()}
                   >
                     <button
