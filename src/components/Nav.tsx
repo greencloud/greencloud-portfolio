@@ -11,7 +11,7 @@ export default function Nav() {
         <nav className="hidden md:flex gap-6 text-md">
           <Link href="/" className="hover:underline">Home</Link>
           <Link href="#about" className="hover:underline">About</Link>
-          <Link href="#skills" className="hover:underline">Tech Stack</Link>
+          <Link href="#techstack" className="hover:underline">Tech Stack</Link>
           <Link href="#projects" className="hover:underline">Projects</Link>
           <Link href="#connect" className="hover:underline">Let's Connect</Link>
         </nav>
