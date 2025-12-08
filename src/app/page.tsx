@@ -63,16 +63,16 @@ export default function Home() {
             {(() => {
               const tools = [
                 'HTML 5','CSS 3','SASS/SCSS','Tailwind CSS','Bootstrap','C Programming','PHP','Python',
-                'Bash Scripting','JavaScript','TypeScript','ReactJS','Next.js','Node.js','jQuery',
+                'Bash Scripting','JavaScript','TypeScript','React','Next.js','Node.js','jQuery',
                 'Electron','WordPress','CodeIgniter','Laravel','MySQL','PostgreSQL','AWS','Vercel',
                 'Git/Github','VS Code','Inkscape','Blender 3D','GNU/Linux','FreeBSD','Cybersecurity'
               ];
               const images = [
-                'icon_html5.svg','icon_css3.svg','icon_sass.svg','icon_tailwind.svg','icon_bootstrap.svg','icon_c.svg',
-                'icon_php.svg','icon_python.svg','icon_bash.svg','icon_javascript.svg','icon_typescript.svg',
-                'icon_reactjs.svg','icon_nextjs.svg','icon_nodejs.svg','icon_jquery.svg',
-                'icon_electron.svg','icon_wordpress.svg','icon_codeigniter.svg',
-                'icon_laravel.svg','icon_mysql.svg','icon_postgresql.svg','icon_aws.svg','icon_vercel.svg','icon_github.svg',
+                'icon_html5.svg','icon_css3.svg','icon_sass.svg','icon_tailwind.svg','icon_bootstrap.svg',
+                'icon_c.svg','icon_php.svg','icon_python.svg','icon_bash.svg','icon_javascript.svg',
+                'icon_typescript.svg','icon_reactjs.svg','icon_nextjs.svg','icon_nodejs.svg','icon_jquery.svg',
+                'icon_electron.svg','icon_wordpress.svg','icon_codeigniter.svg','icon_laravel.svg',
+                'icon_mysql.svg','icon_postgresql.svg','icon_aws.svg','icon_vercel.svg','icon_github.svg',
                 'icon_vscode.svg','icon_inkscape.svg','icon_blender.svg','icon_linux.svg','icon_freebsd.svg',
                 'icon_cybersecurity.svg'
               ];
@@ -93,7 +93,7 @@ export default function Home() {
                 'Bash Scripting': 'Unix shell and command language. Bash is essential for scripting and automating tasks in Unix-like operating systems. I use Bash for writing scripts to automate development workflows and system administration tasks.',
                 'JavaScript': 'Core scripting language for web interactivity. JavaScript enables dynamic content and interactive features on websites, making it an essential tool for modern web development.',
                 'TypeScript': 'Typed superset of JavaScript for scalable apps. TypeScript adds static types to JavaScript, improving code quality and maintainability, especially in large-scale applications.',
-                'ReactJS': 'JavaScript library for building user interfaces. ReactJS allows developers to create reusable UI components and manage application state efficiently, making it ideal for building complex web applications.',
+                'React': 'JavaScript library for building user interfaces. React allows developers to create reusable UI components and manage application state efficiently, making it ideal for building complex web applications.',
                 'Next.js': 'React framework for server-side rendering and static sites. Next.js enhances React applications with features like server-side rendering, static site generation, and API routes, improving performance and SEO. I use Next.js mainly as my go to for frontend development while pairing it with various backend technologies such as Node.js/Express, Python, and others.',
                 'Node.js': 'JavaScript runtime for backend development. Node.js enables server-side scripting with JavaScript, allowing developers to build scalable network applications and APIs.',
                 'jQuery': 'JavaScript library for DOM manipulation. jQuery simplifies tasks like event handling, animation, and AJAX interactions, making it easier to work with HTML documents.',
@@ -103,7 +103,7 @@ export default function Home() {
                 'Laravel': 'Modern PHP framework for web applications. Laravel offers a robust set of tools and features for building scalable and maintainable web applications, including an expressive syntax, ORM, and built-in authentication.',
                 'MySQL': 'Relational database management system. MySQL is a widely used open-source database system that provides reliable data storage and retrieval for web applications.',
                 'PostgreSQL': 'Advanced open-source relational database. PostgreSQL offers powerful features like advanced indexing, full-text search, and support for complex queries, making it suitable for large-scale applications. This is my go to RDBMS for most of my projects.',
-                'AWS': 'Comprehensive cloud computing services. Amazon Web Services (AWS) provides a wide range of cloud-based services, including computing power, storage, and databases, enabling developers to build and deploy applications in the cloud. I use various AWS services such as EC2, S3, RDS, and Lambda for hosting and managing web applications.',
+                'AWS': 'Comprehensive cloud computing services. Amazon Web Services (AWS) provides a wide range of cloud-based services, including computing power, storage, and databases, enabling developers to build and deploy applications in the cloud. I use various AWS services such as EC2, S3, RDS, CloudFront, and Lambda for hosting and managing web applications.',
                 'Vercel': 'Cloud platform for static sites and serverless functions. Vercel is optimized for frontend frameworks like Next.js, providing seamless deployment and scalability for web applications. I use Vercel mainly for deploying my Next.js applications due to its ease of use and performance optimizations.',
                 'Git/Github': 'Version control and code hosting platform. Git is a distributed version control system that helps developers track changes in their codebase, while GitHub provides a collaborative platform for hosting and sharing code repositories. Very useful for CI/CD workflows via GitHub Actions.',
                 'VS Code': 'Popular code editor by Microsoft. VS Code is a lightweight yet powerful code editor that supports a wide range of programming languages and extensions, enhancing developer productivity.',
@@ -127,7 +127,7 @@ export default function Home() {
                     onClick={e => e.stopPropagation()}
                   >
                     <button
-                      className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl"
+                      className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl mr-2 cursor-pointer"
                       onClick={() => setModalOpen(false)}
                       aria-label="Close"
                     >
@@ -153,12 +153,12 @@ export default function Home() {
                     {tools.map((tool, idx) => (
                       <button
                         key={tool}
-                        className="flex flex-col items-center p-4 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="flex flex-col items-center p-4 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"
                         type="button"
                         onClick={() => { setModalOpen(true); setModalIdx(idx); }}
                         aria-label={`Show details for ${tool}`}
                       >
-                        <div className="w-16 h-16 rounded-md bg-gray-100 flex items-center justify-center">
+                        <div className="w-16 h-16 rounded-md bg-gray-100 flex items-center justify-center cursor-pointer">
                           <Image
                             src={`/icons/${images[idx]}`}
                             alt={tool}
