@@ -43,7 +43,7 @@ export default function Home() {
                 The original site uses images from portfolio.sectorzlabs.com.
                 Example remote image path used here — replace with a real image path or local image if necessary.
               */}
-              <Image src="/webmaster.webp"
+              <Image src="https://res.cloudinary.com/sectorzlabs/image/upload/v1765213427/webmaster_dhd67i.webp"
                      alt="Webmaster" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
