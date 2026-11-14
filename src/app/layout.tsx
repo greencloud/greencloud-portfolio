@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Rajdhani } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+
+const displayFont = Rajdhani({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: "700",
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,9 +52,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="dark"
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`try {
+            document.documentElement.classList.toggle("dark", localStorage.getItem("portfolio-theme") !== "light");
+          } catch {
+            document.documentElement.classList.add("dark");
+          }`}
+        </Script>
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} antialiased bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100`}
       >
         {children}
         <Script

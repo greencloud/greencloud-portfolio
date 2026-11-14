@@ -27,7 +27,7 @@ export default function ProjectsGallery() {
   return (
     <div className="max-w-6xl mx-auto px-6">
       <h3 className="text-2xl font-bold mb-6">Recent Projects</h3>
-      <p className="text-base text-gray-600 mb-6">
+      <p className="text-base text-gray-600 dark:text-gray-400 mb-6">
         Below are some of my selected projects I built from ground up. Click a
         project to view details.
       </p>
@@ -37,13 +37,13 @@ export default function ProjectsGallery() {
           <button
             type="button"
             key={p.id}
-            className="block border border-gray-200 bg-white text-left rounded overflow-hidden hover:shadow-lg cursor-pointer"
+            className="block border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-left rounded overflow-hidden hover:shadow-lg cursor-pointer"
             onClick={() => {
               setIndex(i);
               setOpen(true);
             }}
           >
-            <div className="relative h-58 bg-gray-200">
+            <div className="relative h-58 bg-gray-200 dark:bg-gray-800">
               <Image
                 src={p.thumbnail}
                 alt={p.title}
@@ -55,7 +55,9 @@ export default function ProjectsGallery() {
 
             <div className="p-4">
               <h4 className="font-semibold">{p.title}</h4>
-              <p className="text-sm text-gray-600 mt-2">{p.summary}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                {p.summary}
+              </p>
             </div>
           </button>
         ))}

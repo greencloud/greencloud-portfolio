@@ -3,34 +3,36 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import ProjectsGallery from "../components/ProjectsGallery";
 import TechStack from "../components/TechStack";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function Home() {
   return (
     <>
       <Nav />
 
-      <main id="home" className="bg-gray-50 text-gray-900">
+      <main
+        id="home"
+        className="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100"
+      >
         {/* Hero / Intro */}
         <section id="about" className="pt-16 pb-12">
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-4 header-title">
-                Code. Create. Deliver.
-              </h1>
-              <p className="text-lg text-gray-700 mb-6">
+            <div className="hero-copy min-w-0">
+              <h1 className="mb-4 header-title">:/Code + Create + Deliver</h1>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
                 Transforming ideas into scalable, dynamic, and user-friendly
                 platforms.
               </p>
 
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
                 <h2 className="text-2xl font-semibold">
                   Hi, my name is Garry,
                 </h2>
-                <p className="text-2xl text-indigo-800 font-medium">
+                <p className="text-2xl text-indigo-800 dark:text-indigo-300 font-medium">
                   Full Stack Developer
                 </p>
                 <hr className="my-4" />
-                <p className="text-base text-gray-600">
+                <p className="text-base text-gray-600 dark:text-gray-400">
                   I specialize in developing custom dynamic web-based
                   applications designed to meet the unique needs of businesses
                   of all sizes—from small local companies to enterprise-level
@@ -51,7 +53,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#projects"
-                    className="inline-block px-4 py-2 border border-gray-300 font-semibold rounded-lg"
+                    className="inline-block px-4 py-2 border border-gray-300 dark:border-gray-600 font-semibold rounded-lg"
                   >
                     See projects
                   </a>
@@ -59,11 +61,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative h-72 md:h-96 rounded-lg overflow-hidden bg-gray-200">
+            <div className="relative aspect-square w-full rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-800">
               <Image
                 src="/webmaster.webp"
                 alt="Webmaster"
-                sizes="(min-width: auto) 50vw, 100vw"
+                sizes="(min-width: 768px) 50vw, 100vw"
                 preload
                 fill
                 style={{ objectFit: "cover" }}
@@ -73,12 +75,12 @@ export default function Home() {
         </section>
 
         {/* Skills / Tools */}
-        <section id="techstack" className="py-12 bg-white">
+        <section id="techstack" className="py-12 bg-white dark:bg-gray-900">
           <div className="max-w-6xl mx-auto px-6">
             <h3 className="text-2xl font-bold mb-6">
               Tech Stack: My Tools of the Trade
             </h3>
-            <p className="text-base text-gray-600 mb-8">
+            <p className="text-base text-gray-600 dark:text-gray-400 mb-8">
               These are some of the tools, technologies, and frameworks that
               shape my development workflow.
             </p>
@@ -93,10 +95,10 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="connect" className="py-12 bg-white">
+        <section id="connect" className="py-12 bg-white dark:bg-gray-900">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h3 className="text-2xl font-bold mb-4">Let's Connect</h3>
-            <p className="text-base text-gray-600 mb-4">
+            <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
               Stuck on what to do next? Let's connect and create something
               amazing together.
             </p>
@@ -106,7 +108,7 @@ export default function Home() {
               <p>
                 <a
                   href="mailto:greencloud@linuxmail.org"
-                  className="text-indigo-600"
+                  className="text-indigo-600 dark:text-indigo-400"
                 >
                   greencloud@linuxmail.org
                 </a>
@@ -127,6 +129,7 @@ export default function Home() {
                 </a>
               </p>
             </div>
+            <ThemeToggle />
           </div>
         </section>
       </main>

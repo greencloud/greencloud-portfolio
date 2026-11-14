@@ -4,6 +4,28 @@ import { useRef, useState } from "react";
 
 export default function TechStack() {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const backdropPointerDown = useRef(false);
+  const [closing, setClosing] = useState(false);
+
+  function closeModal() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      dialogRef.current?.close();
+      return;
+    }
+    setClosing(true);
+  }
+
+  function isOutsideDialog(clientX: number, clientY: number) {
+    const bounds = dialogRef.current?.getBoundingClientRect();
+    return (
+      bounds &&
+      (clientX < bounds.left ||
+        clientX > bounds.right ||
+        clientY < bounds.top ||
+        clientY > bounds.bottom)
+    );
+  }
+
   const tools = [
     "HTML 5",
     "CSS 3",
@@ -139,9 +161,10 @@ export default function TechStack() {
         {tools.map((tool, idx) => (
           <button
             key={tool}
-            className="flex flex-col items-center p-4 border border-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"
             type="button"
             onClick={() => {
+              setClosing(false);
               setModalIdx(idx);
               dialogRef.current?.showModal();
             }}
@@ -163,12 +186,46 @@ export default function TechStack() {
       <dialog
         ref={dialogRef}
         aria-labelledby="tool-title"
-        className="m-auto max-h-[85vh] overflow-y-auto bg-white rounded-lg shadow-lg p-8 max-w-125 w-[calc(100%-3rem)] backdrop:bg-black/60"
+        data-closing={closing || undefined}
+        onKeyDown={(event) => {
+          if (event.key === "Escape") {
+            event.preventDefault();
+            closeModal();
+          }
+        }}
+        onCancel={(event) => {
+          event.preventDefault();
+          closeModal();
+        }}
+        onPointerDown={(event) => {
+          backdropPointerDown.current = Boolean(
+            isOutsideDialog(event.clientX, event.clientY),
+          );
+        }}
+        onClick={(event) => {
+          if (
+            backdropPointerDown.current &&
+            isOutsideDialog(event.clientX, event.clientY)
+          ) {
+            closeModal();
+          }
+          backdropPointerDown.current = false;
+        }}
+        onAnimationEnd={(event) => {
+          if (
+            event.target === event.currentTarget &&
+            event.animationName === "tech-stack-dialog-exit"
+          ) {
+            dialogRef.current?.close();
+            setClosing(false);
+          }
+        }}
+        className="tech-stack-dialog m-auto max-h-[85vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 max-w-125 w-[calc(100%-3rem)] backdrop:bg-black/60"
       >
         <button
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl mr-2 cursor-pointer"
+          className="absolute top-2 right-2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 text-xl mr-2 cursor-pointer"
           type="button"
-          onClick={() => dialogRef.current?.close()}
+          onClick={closeModal}
           aria-label="Close"
         >
           &times;
@@ -179,12 +236,12 @@ export default function TechStack() {
           width={64}
           height={64}
           style={{ objectFit: "contain" }}
-          className="mb-4"
+          className="mx-auto mb-4 rounded-md bg-gray-100 p-2"
         />
         <h4 id="tool-title" className="text-xl font-bold mb-2 text-center">
           {tools[modalIdx ?? 0]}
         </h4>
-        <p className="text-gray-700 text-center mb-2">
+        <p className="text-gray-700 dark:text-gray-300 text-center mb-2">
           {toolDescriptions[tools[modalIdx ?? 0]]}
         </p>
       </dialog>
