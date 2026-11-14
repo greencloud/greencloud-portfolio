@@ -4,7 +4,23 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body, #__next { height: 100%; }
+html,
+body,
+#__next {
+  height: 100%;
+}
 
 /* small extras to match look */
-.header-title { letter-spacing: -0.02em; }
+.header-title {
+  letter-spacing: -0.02em;
+}
+
+section[id] {
+  scroll-margin-top: 9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

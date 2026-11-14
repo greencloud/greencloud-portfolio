@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
@@ -28,14 +28,16 @@ export default function ProjectsGallery() {
     <div className="max-w-6xl mx-auto px-6">
       <h3 className="text-2xl font-bold mb-6">Recent Projects</h3>
       <p className="text-base text-gray-600 mb-6">
-        Below are some of my selected projects I built from ground up. Click a project to view details.
+        Below are some of my selected projects I built from ground up. Click a
+        project to view details.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {projects.map((p, i) => (
-          <div
+          <button
+            type="button"
             key={p.id}
-            className="block border border-gray-200 bg-white-50 rounded overflow-hidden hover:shadow-lg cursor-pointer"
+            className="block border border-gray-200 bg-white text-left rounded overflow-hidden hover:shadow-lg cursor-pointer"
             onClick={() => {
               setIndex(i);
               setOpen(true);
@@ -45,6 +47,7 @@ export default function ProjectsGallery() {
               <Image
                 src={p.thumbnail}
                 alt={p.title}
+                sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                 fill
                 className="object-cover object-top"
               />
@@ -54,7 +57,7 @@ export default function ProjectsGallery() {
               <h4 className="font-semibold">{p.title}</h4>
               <p className="text-sm text-gray-600 mt-2">{p.summary}</p>
             </div>
-          </div>
+          </button>
         ))}
       </div>
 
