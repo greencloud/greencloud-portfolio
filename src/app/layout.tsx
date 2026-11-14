@@ -23,6 +23,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio.sectorzlabs.com"),
   title: "meaPERITIA — Garry Molleno Jr.",
+  icons: {
+    icon: [16, 32, 48, 192, 512].map((size) => ({
+      url: `/favicon-${size}x${size}.png`,
+      sizes: `${size}x${size}`,
+      type: "image/png",
+    })),
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   description:
     "Explore the portfolio of Garry Molleno Jr., a web developer specializing in custom dynamic web-based applications. Discover expertise in modern web technologies, recent projects, and professional digital solutions tailored for businesses of any scale.",
   keywords:
