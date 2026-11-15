@@ -40,3 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 MyOnlinePortfolio2025.code-workspace
+/tests/security.test.cjs
