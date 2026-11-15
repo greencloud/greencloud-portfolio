@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Rajdhani } from "next/font/google";
+import { headers } from "next/headers";
 import Script from "next/script";
 import "./globals.css";
 
@@ -56,11 +57,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
+
   return (
     <html
       lang="en"
@@ -69,7 +72,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <Script id="theme-init" strategy="beforeInteractive">
+        <Script nonce={nonce} id="theme-init" strategy="beforeInteractive">
           {`try {
             document.documentElement.classList.toggle("dark", localStorage.getItem("portfolio-theme") !== "light");
           } catch {
@@ -82,10 +85,11 @@ export default function RootLayout({
       >
         {children}
         <Script
+          nonce={nonce}
           src="https://www.googletagmanager.com/gtag/js?id=G-MNLJ711DQ8"
           strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script nonce={nonce} id="google-analytics" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
