@@ -108,3 +108,45 @@ section[id] {
     animation-duration: 1ms;
   }
 }
+
+/* Keep the menu mounted so both opening and closing can animate. */
+.mobile-navigation {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    grid-template-rows 200ms ease,
+    opacity 200ms ease,
+    visibility 200ms;
+}
+
+.mobile-navigation[data-open="true"] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-navigation-content {
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 64rem) {
+  .mobile-navigation {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+  }
+
+  .mobile-navigation-content {
+    overflow: visible;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-navigation {
+    transition: none;
+  }
+}
