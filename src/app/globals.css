@@ -36,6 +36,10 @@ body,
   white-space: nowrap;
 }
 
+:lang(es) .header-title {
+  font-size: 8cqi;
+}
+
 #home,
 section[id] {
   scroll-margin-top: 9rem;

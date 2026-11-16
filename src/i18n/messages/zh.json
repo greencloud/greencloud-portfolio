@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我",
+    "techstack": "技术栈",
+    "projects": "项目",
+    "connect": "联系我",
+    "label": "主导航",
+    "open": "打开菜单",
+    "close": "关闭菜单",
+    "logo": "meaPERITIA 标志"
+  },
+  "language": {
+    "label": "切换语言",
+    "title": "语言"
+  },
+  "hero": {
+    "title": ":/编程 + 创造 + 交付",
+    "intro": "将创意转化为可扩展、动态且易于使用的平台。",
+    "greeting": "你好，我叫 Garry，",
+    "role": "全栈开发工程师",
+    "bio": "我专注于开发定制化动态网站应用，以满足从本地小型企业到大型组织等不同规模企业的独特需求。凭借在 React、Next.js、Node.js、Express、MySQL、PostgreSQL、PHP 和 Python 方面的经验，结合 Bootstrap、Tailwind CSS、LiquidJS 和 jQuery 等现代前端工具，我打造的解决方案不仅界面精美，还兼具安全性、可扩展性和出色性能。",
+    "talk": "聊一聊",
+    "projects": "查看项目",
+    "portrait": "网站开发工程师 Garry Molleno Jr. 的肖像"
+  },
+  "skills": {
+    "title": "技术栈：我的开发工具",
+    "intro": "以下是我在开发工作中使用的部分工具、技术和框架。",
+    "details": "查看{tool}的详细信息",
+    "close": "关闭",
+    "tools": [
+      {
+        "name": "HTML 5",
+        "description": "用于组织网站内容的标记语言。HTML 5 是网站开发的基础，为网页和应用提供必要的结构。"
+      },
+      {
+        "name": "CSS 3",
+        "description": "用于网页的样式语言。CSS 3 提供动画、过渡和弹性布局等高级功能，是创建美观且具有响应式布局的网站的基础。"
+      },
+      {
+        "name": "SASS/SCSS",
+        "description": "用于高级样式开发的 CSS 预处理器。SASS/SCSS 通过变量、嵌套规则和混入等功能增强 CSS，让大型项目中的复杂样式表更易于管理。"
+      },
+      {
+        "name": "Tailwind CSS",
+        "description": "以实用类为核心的 CSS 框架，用于快速开发用户界面。Tailwind CSS 提供预定义的类，让开发者无需编写大量自定义 CSS 就能构建个性化设计。"
+      },
+      {
+        "name": "Bootstrap",
+        "description": "流行的响应式 CSS 框架。Bootstrap 提供预设组件和响应式网格系统，帮助开发者快速创建以移动端为先的网站与应用。"
+      },
+      {
+        "name": "C 语言编程",
+        "description": "通用编程语言。C 广泛用于系统编程、嵌入式系统和对性能要求较高的应用。我使用 C 进行底层编程并理解计算机核心概念。C 一直是我最喜欢的编程语言。"
+      },
+      {
+        "name": "PHP",
+        "description": "用于网站开发的服务器端脚本语言。我主要在使用 WordPress 和其他内容管理平台时使用 PHP。"
+      },
+      {
+        "name": "Python",
+        "description": "适用于网站、数据处理等领域的多用途编程语言。Python 在后端开发、自动化和数据分析方面非常实用。我尤其经常用它来处理图像和数据。"
+      },
+      {
+        "name": "Bash 脚本编程",
+        "description": "Unix 命令解释器和脚本语言。Bash 是类 Unix 系统中编写脚本和自动执行任务的重要工具。我用它来自动化开发流程和系统管理任务。"
+      },
+      {
+        "name": "JavaScript",
+        "description": "实现网页交互的核心脚本语言。JavaScript 支持动态内容和交互功能，是现代网站开发的重要工具。"
+      },
+      {
+        "name": "TypeScript",
+        "description": "适用于可扩展应用的 JavaScript 类型扩展。TypeScript 为 JavaScript 添加静态类型，提高代码质量和可维护性，尤其适合大型应用。"
+      },
+      {
+        "name": "React",
+        "description": "用于构建用户界面的 JavaScript 库。React 支持可复用组件和高效的状态管理，非常适合开发复杂的网站应用。"
+      },
+      {
+        "name": "Next.js",
+        "description": "支持服务器端渲染和静态网站的 React 框架。Next.js 提供服务器端渲染、静态网站生成和 API 路由等功能，改善性能和搜索引擎优化。我通常使用 Next.js 开发前端，并搭配 Node.js/Express、Python 等后端技术。"
+      },
+      {
+        "name": "Node.js",
+        "description": "用于后端开发的 JavaScript 运行环境。Node.js 支持在服务器端使用 JavaScript，帮助开发者构建可扩展的网络应用和 API。"
+      },
+      {
+        "name": "jQuery",
+        "description": "用于操作文档对象模型的 JavaScript 库。jQuery 简化事件处理、动画和 AJAX 交互，让 HTML 文档操作更加方便。"
+      },
+      {
+        "name": "Electron",
+        "description": "利用网站技术开发桌面应用的框架。Electron 支持使用 HTML、CSS 和 JavaScript 创建跨平台桌面应用。"
+      },
+      {
+        "name": "WordPress",
+        "description": "流行的网站和博客内容管理系统。WordPress 灵活易用，为大量网站提供支持，方便用户创建和管理网站。"
+      },
+      {
+        "name": "CodeIgniter",
+        "description": "用于快速网站开发的 PHP 框架。CodeIgniter 轻量简洁，提供实用的工具集，帮助开发者快速构建网站应用。"
+      },
+      {
+        "name": "Laravel",
+        "description": "用于网站应用的现代 PHP 框架。Laravel 提供丰富的工具，支持构建可扩展且易维护的应用，包括清晰的语法、对象关系映射和内置身份验证。"
+      },
+      {
+        "name": "MySQL",
+        "description": "关系型数据库管理系统。MySQL 是广泛使用的开源数据库，为网站应用提供可靠的数据存储与查询功能。"
+      },
+      {
+        "name": "PostgreSQL",
+        "description": "先进的开源关系型数据库。PostgreSQL 提供高级索引、全文搜索和复杂查询等强大功能，适用于大型应用，也是我多数项目的首选关系型数据库。"
+      },
+      {
+        "name": "AWS",
+        "description": "全面的云计算服务。Amazon Web Services（AWS）提供计算、存储和数据库等多种云服务，支持在云端构建和部署应用。我使用 EC2、S3、RDS、CloudFront 和 Lambda 等服务托管和管理网站应用。"
+      },
+      {
+        "name": "Vercel",
+        "description": "用于静态网站和无服务器函数的云平台。Vercel 针对 Next.js 等前端框架进行优化，提供便捷的部署和扩展能力。我主要用它部署 Next.js 应用，享受其易用性和性能优化。"
+      },
+      {
+        "name": "Git/Github",
+        "description": "版本控制和代码托管平台。Git 是分布式版本控制系统，用于跟踪代码变更；GitHub 提供协作式代码仓库托管与共享平台，也很适合通过 GitHub Actions 实现持续集成与交付。"
+      },
+      {
+        "name": "VS Code",
+        "description": "微软开发的流行代码编辑器。VS Code 轻量且功能强大，支持多种编程语言和扩展，有助于提高开发效率。"
+      },
+      {
+        "name": "Inkscape",
+        "description": "开源矢量图形编辑器。Inkscape 支持创建和编辑矢量图像，非常适合设计标志、图标和其他可缩放图形。"
+      },
+      {
+        "name": "Blender 3D",
+        "description": "开源三维创作套件。Blender 3D 提供建模、动画和渲染等完整工具。我主要用它创建三维素材和可视化作品。"
+      },
+      {
+        "name": "GNU/Linux",
+        "description": "我从 1996 年开始探索 Linux（Debian），并自 2005 年起将 Arch Linux 作为日常使用的系统。Linux 提供稳定且高度可定制的开发环境，并拥有丰富的开源工具和软件生态。"
+      },
+      {
+        "name": "FreeBSD",
+        "description": "类 UNIX 操作系统，以性能、安全性和先进的网络功能著称。我主要将 FreeBSD 用于服务器部署和网络服务，也用它开展 pfSense 防火墙、FreeNAS 存储服务器等项目。"
+      },
+      {
+        "name": "网络安全",
+        "description": "保护系统安全的实践与工具。网络安全旨在保护计算机系统与网络免受威胁和漏洞影响。我采用网络安全最佳实践，保障应用和数据的完整性、保密性与可用性。"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "近期项目",
+    "intro": "以下是我从零开始构建的部分精选项目。点击项目查看详细信息。",
+    "projects": [
+      {
+        "title": "Malera 官方网站",
+        "summary": "MALERA 为家庭和企业提供环保、紧凑的污水处理系统，性能可靠且维护需求低。",
+        "caption": "MALERA 为家庭和企业提供环保、紧凑的污水处理系统，性能可靠且维护需求低。"
+      },
+      {
+        "title": "AlbumTrato 电子商务平台",
+        "summary": "AlbumTrato 是一家在线商店，提供手工制作、可定制的相册和纪念盒，包括婚礼相册、摄影画册等。",
+        "caption": "AlbumTrato 是一家在线商店，提供手工制作、可定制的相册和纪念盒，包括婚礼相册、摄影画册等。"
+      },
+      {
+        "title": "Savona 卫生解决方案",
+        "summary": "一家提供工业卫生与加工设备解决方案的企业网站，主要服务于食品、饮料和制药行业。",
+        "caption": "一家提供工业卫生与加工设备解决方案的企业网站，主要服务于食品、饮料和制药行业。"
+      },
+      {
+        "title": "Dem Skill Industries",
+        "summary": "一家信息技术服务与咨询公司，通过软件开发、基础设施、云服务、数据分析和近岸外包服务帮助企业实现数字化转型。",
+        "caption": "一家信息技术服务与咨询公司，通过软件开发、基础设施、云服务、数据分析和近岸外包服务帮助企业实现数字化转型。"
+      },
+      {
+        "title": "Sector-Z Labs 服务",
+        "summary": "Sector-Z Labs 的信息技术服务网站，提供计算机、网络和软件开发服务。",
+        "caption": "Sector-Z Labs 的信息技术服务网站，提供计算机、网络和软件开发服务。"
+      },
+      {
+        "title": "Diamond Precise Toolings",
+        "summary": "一家工业工程与制造供应企业的网站，提供固液分离过滤设备及相关耗材。",
+        "caption": "一家工业工程与制造供应企业的网站，提供固液分离过滤设备及相关耗材。"
+      },
+      {
+        "title": "Malera 内部管理系统",
+        "summary": "用于管理 Malera 客户、项目和服务的内部管理系统。",
+        "caption": "用于管理 Malera 客户、项目和服务的内部管理系统。"
+      },
+      {
+        "title": "Academy for Creating Enterprise 内部管理系统",
+        "summary": "用于管理 ACE 学员、课程和报名信息的内部管理系统。",
+        "caption": "用于管理 ACE 学员、课程和报名信息的内部管理系统。"
+      }
+    ],
+    "labels": {
+      "Previous": "上一张",
+      "Next": "下一张",
+      "Close": "关闭",
+      "Zoom in": "放大",
+      "Zoom out": "缩小",
+      "Show thumbnails": "显示缩略图",
+      "Hide thumbnails": "隐藏缩略图",
+      "Thumbnails": "缩略图",
+      "Show captions": "显示说明",
+      "Hide captions": "隐藏说明",
+      "Caption": "说明",
+      "Loading": "加载中",
+      "Error": "错误",
+      "Image": "图片",
+      "Slide": "幻灯片",
+      "of": "共",
+      "Carousel": "轮播图",
+      "Photo gallery": "图片集",
+      "Lightbox": "图片查看器",
+      "{index} of {total}": "第 {index} 张，共 {total} 张"
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "intro": "不知道下一步该做什么？让我们一起交流，共同创造精彩的作品。",
+    "address": "八打雁省圣托马斯市圣巴勃罗"
+  },
+  "footer": "保留部分权利。",
+  "theme": {
+    "light": "切换到浅色模式",
+    "dark": "切换到深色模式"
+  },
+  "metadata": {
+    "description": "探索 Garry Molleno Jr. 的作品集。他是一名专注于定制化动态网站应用的开发工程师。在这里了解现代网站技术、近期项目以及面向不同规模企业的专业数字化解决方案。",
+    "keywords": "Garry Molleno Jr, 网站开发工程师, 作品集, 定制网站应用, 动态网站, 数字化解决方案, 全栈开发, 前端开发, 后端开发, 技能, 近期项目, 聘请网站开发工程师",
+    "ogTitle": "Garry Molleno Jr. — 作品集",
+    "siteName": "我的在线作品集 | Garry Molleno Jr.",
+    "imageAlt": "作品集封面图片",
+    "locale": "zh_CN"
+  }
+}

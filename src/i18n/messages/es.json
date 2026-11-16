@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "techstack": "Tecnologías",
+    "projects": "Proyectos",
+    "connect": "Conectemos",
+    "label": "Navegación principal",
+    "open": "Abrir menú",
+    "close": "Cerrar menú",
+    "logo": "Logotipo de meaPERITIA"
+  },
+  "language": {
+    "label": "Cambiar idioma",
+    "title": "Idioma"
+  },
+  "hero": {
+    "title": ":/Programar + Crear + Entregar",
+    "intro": "Transformo ideas en plataformas escalables, dinámicas y fáciles de usar.",
+    "greeting": "Hola, me llamo Garry,",
+    "role": "Desarrollador de pila completa",
+    "bio": "Me especializo en desarrollar aplicaciones web dinámicas a medida para satisfacer las necesidades de empresas de todos los tamaños, desde pequeños negocios locales hasta grandes organizaciones. Gracias a mi experiencia en React, Next.js, Node.js, Express, MySQL, PostgreSQL, PHP y Python, junto con herramientas modernas de desarrollo de interfaces como Bootstrap, Tailwind CSS, LiquidJS y jQuery, creo soluciones con un diseño cuidado que también son seguras, escalables y optimizadas para ofrecer un gran rendimiento.",
+    "talk": "Hablemos",
+    "projects": "Ver proyectos",
+    "portrait": "Retrato de Garry Molleno Jr., desarrollador web"
+  },
+  "skills": {
+    "title": "Tecnologías: mis herramientas de trabajo",
+    "intro": "Estas son algunas de las herramientas, tecnologías y bibliotecas que forman parte de mi flujo de desarrollo.",
+    "details": "Ver detalles de {tool}",
+    "close": "Cerrar",
+    "tools": [
+      {
+        "name": "HTML 5",
+        "description": "Lenguaje de marcado para estructurar el contenido web. HTML 5 es la base del desarrollo web y proporciona la estructura esencial de las páginas y aplicaciones."
+      },
+      {
+        "name": "CSS 3",
+        "description": "Lenguaje de estilos para páginas web. CSS 3 incorpora animaciones, transiciones y diseños flexibles. Es fundamental para crear interfaces atractivas y adaptables."
+      },
+      {
+        "name": "SASS/SCSS",
+        "description": "Preprocesador de CSS para estilos avanzados. SASS/SCSS añade variables, reglas anidadas y mezclas que facilitan la gestión de hojas de estilo complejas en proyectos grandes."
+      },
+      {
+        "name": "Tailwind CSS",
+        "description": "Biblioteca de CSS basada en clases de utilidad para desarrollar interfaces con rapidez. Tailwind CSS permite crear diseños personalizados sin escribir extensas hojas de estilo."
+      },
+      {
+        "name": "Bootstrap",
+        "description": "Popular biblioteca de CSS para diseño adaptable. Bootstrap ofrece componentes prediseñados y una cuadrícula adaptable para crear rápidamente sitios y aplicaciones pensados para móviles."
+      },
+      {
+        "name": "Programación en C",
+        "description": "Lenguaje de programación de propósito general. C se utiliza en sistemas, dispositivos integrados y aplicaciones de alto rendimiento. Lo uso para programar a bajo nivel y comprender los fundamentos de la informática. Es mi lenguaje de programación favorito."
+      },
+      {
+        "name": "PHP",
+        "description": "Lenguaje de programación del lado del servidor para la web. Utilizo PHP principalmente cuando trabajo con WordPress y otras plataformas de gestión de contenidos."
+      },
+      {
+        "name": "Python",
+        "description": "Lenguaje de programación versátil para la web, los datos y otras áreas. Python resulta útil para el desarrollo de servidores, la automatización y el análisis de datos. Lo uso mucho para procesar imágenes y manipular datos."
+      },
+      {
+        "name": "Programación en Bash",
+        "description": "Intérprete de comandos y lenguaje de sistemas Unix. Bash es esencial para automatizar tareas en sistemas de tipo Unix. Lo uso para automatizar flujos de desarrollo y tareas de administración de sistemas."
+      },
+      {
+        "name": "JavaScript",
+        "description": "Lenguaje esencial para la interactividad web. JavaScript permite crear contenido dinámico y funciones interactivas, por lo que es una herramienta imprescindible en el desarrollo web moderno."
+      },
+      {
+        "name": "TypeScript",
+        "description": "Extensión de JavaScript con tipos para aplicaciones escalables. TypeScript añade tipos estáticos que mejoran la calidad y el mantenimiento del código, especialmente en aplicaciones grandes."
+      },
+      {
+        "name": "React",
+        "description": "Biblioteca de JavaScript para crear interfaces de usuario. React permite construir componentes reutilizables y gestionar el estado de forma eficiente, ideal para aplicaciones web complejas."
+      },
+      {
+        "name": "Next.js",
+        "description": "Entorno de desarrollo basado en React para renderizar en el servidor y crear sitios estáticos. Next.js añade generación de sitios estáticos, rutas de API y otras funciones que mejoran el rendimiento y el posicionamiento. Es mi opción habitual para las interfaces, junto con tecnologías de servidor como Node.js/Express y Python."
+      },
+      {
+        "name": "Node.js",
+        "description": "Entorno de ejecución de JavaScript para servidores. Node.js permite crear aplicaciones de red y API escalables con JavaScript."
+      },
+      {
+        "name": "jQuery",
+        "description": "Biblioteca de JavaScript para manipular el modelo de objetos del documento. jQuery simplifica la gestión de eventos, las animaciones y las interacciones AJAX al trabajar con documentos HTML."
+      },
+      {
+        "name": "Electron",
+        "description": "Entorno para crear aplicaciones de escritorio con tecnologías web. Electron permite desarrollar aplicaciones multiplataforma con HTML, CSS y JavaScript."
+      },
+      {
+        "name": "WordPress",
+        "description": "Popular sistema de gestión de contenidos para sitios y blogs. WordPress es una plataforma flexible que permite crear y administrar sitios web con facilidad."
+      },
+      {
+        "name": "CodeIgniter",
+        "description": "Entorno de PHP para desarrollar aplicaciones web con rapidez. CodeIgniter es ligero y ofrece un conjunto de herramientas sencillo y elegante."
+      },
+      {
+        "name": "Laravel",
+        "description": "Entorno moderno de PHP para aplicaciones web. Laravel ofrece herramientas robustas para crear aplicaciones escalables y fáciles de mantener, con sintaxis expresiva, mapeo de objetos a bases de datos y autenticación integrada."
+      },
+      {
+        "name": "MySQL",
+        "description": "Sistema de gestión de bases de datos relacionales. MySQL es una solución de código abierto muy utilizada para almacenar y recuperar datos de forma fiable en aplicaciones web."
+      },
+      {
+        "name": "PostgreSQL",
+        "description": "Base de datos relacional avanzada de código abierto. PostgreSQL ofrece indexación avanzada, búsqueda de texto completo y consultas complejas, ideal para aplicaciones grandes. Es mi sistema de bases de datos habitual para la mayoría de mis proyectos."
+      },
+      {
+        "name": "AWS",
+        "description": "Servicios integrales de computación en la nube. Amazon Web Services (AWS) ofrece capacidad de cómputo, almacenamiento y bases de datos. Utilizo EC2, S3, RDS, CloudFront y Lambda para alojar y administrar aplicaciones web."
+      },
+      {
+        "name": "Vercel",
+        "description": "Plataforma en la nube para sitios estáticos y funciones sin servidor. Vercel está optimizada para entornos como Next.js y facilita el despliegue y la escalabilidad. La uso principalmente para desplegar aplicaciones Next.js por su facilidad de uso y rendimiento."
+      },
+      {
+        "name": "Git/Github",
+        "description": "Control de versiones y alojamiento de código. Git permite registrar cambios en el código y GitHub facilita la colaboración y el intercambio de repositorios. Son muy útiles para la integración y entrega continuas mediante GitHub Actions."
+      },
+      {
+        "name": "VS Code",
+        "description": "Popular editor de código de Microsoft. VS Code es ligero y potente, compatible con numerosos lenguajes y extensiones que mejoran la productividad."
+      },
+      {
+        "name": "Inkscape",
+        "description": "Editor de gráficos vectoriales de código abierto. Inkscape permite crear y editar imágenes vectoriales, ideal para logotipos, iconos y otros gráficos escalables."
+      },
+      {
+        "name": "Blender 3D",
+        "description": "Conjunto de herramientas de creación 3D de código abierto. Blender 3D permite modelar, animar y renderizar. Lo uso principalmente para crear recursos y visualizaciones en 3D."
+      },
+      {
+        "name": "GNU/Linux",
+        "description": "Empecé a experimentar con Linux (Debian) en 1996 y uso Arch Linux como sistema principal desde 2005. Linux ofrece un entorno de desarrollo estable y muy personalizable, con un amplio ecosistema de herramientas y programas de código abierto."
+      },
+      {
+        "name": "FreeBSD",
+        "description": "Sistema operativo de tipo UNIX conocido por su rendimiento, seguridad y funciones avanzadas de red. Utilizo FreeBSD principalmente en servidores y servicios de red, además de proyectos como cortafuegos pfSense y almacenamiento FreeNAS."
+      },
+      {
+        "name": "Ciberseguridad",
+        "description": "Prácticas y herramientas para proteger sistemas y redes frente a amenazas y vulnerabilidades. Aplico buenas prácticas de ciberseguridad para garantizar la integridad, confidencialidad y disponibilidad de las aplicaciones y los datos."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Proyectos recientes",
+    "intro": "Estos son algunos de los proyectos que he desarrollado desde cero. Haz clic en un proyecto para ver los detalles.",
+    "projects": [
+      {
+        "title": "Sitio web oficial de Malera",
+        "summary": "MALERA ofrece sistemas compactos y ecológicos de tratamiento de aguas residuales para hogares y empresas, con un funcionamiento fiable y de bajo mantenimiento.",
+        "caption": "MALERA ofrece sistemas compactos y ecológicos de tratamiento de aguas residuales para hogares y empresas, con un funcionamiento fiable y de bajo mantenimiento."
+      },
+      {
+        "title": "Plataforma de comercio electrónico de AlbumTrato",
+        "summary": "AlbumTrato es una tienda en línea de álbumes de fotos y cajas de recuerdos artesanales y personalizables, incluidos álbumes de boda, libros de fotografías decorativos y más.",
+        "caption": "AlbumTrato es una tienda en línea de álbumes de fotos y cajas de recuerdos artesanales y personalizables, incluidos álbumes de boda, libros de fotografías decorativos y más."
+      },
+      {
+        "title": "Soluciones de higiene de Savona",
+        "summary": "Sitio web corporativo de una empresa que suministra soluciones de higiene industrial y equipos de procesamiento, especialmente para productores de alimentos, bebidas y productos farmacéuticos.",
+        "caption": "Sitio web corporativo de una empresa que suministra soluciones de higiene industrial y equipos de procesamiento, especialmente para productores de alimentos, bebidas y productos farmacéuticos."
+      },
+      {
+        "title": "Dem Skill Industries",
+        "summary": "Empresa de servicios y consultoría informática que ayuda a otras empresas en su transformación digital mediante desarrollo de software, infraestructura, nube, análisis de datos y servicios de externalización en países cercanos.",
+        "caption": "Empresa de servicios y consultoría informática que ayuda a otras empresas en su transformación digital mediante desarrollo de software, infraestructura, nube, análisis de datos y servicios de externalización en países cercanos."
+      },
+      {
+        "title": "Servicios de Sector-Z Labs",
+        "summary": "Sitio web de servicios informáticos y tecnológicos de Sector-Z Labs, que ofrece servicios de computación, redes y desarrollo de software.",
+        "caption": "Sitio web de servicios informáticos y tecnológicos de Sector-Z Labs, que ofrece servicios de computación, redes y desarrollo de software."
+      },
+      {
+        "title": "Diamond Precise Toolings",
+        "summary": "Sitio web de una empresa de ingeniería industrial y suministros de fabricación que ofrece equipos de filtración para separar sólidos y líquidos, junto con consumibles relacionados.",
+        "caption": "Sitio web de una empresa de ingeniería industrial y suministros de fabricación que ofrece equipos de filtración para separar sólidos y líquidos, junto con consumibles relacionados."
+      },
+      {
+        "title": "Sistema de gestión interna de Malera",
+        "summary": "Sistema de gestión interna de Malera para administrar clientes, proyectos y servicios.",
+        "caption": "Sistema de gestión interna de Malera para administrar clientes, proyectos y servicios."
+      },
+      {
+        "title": "Sistema de gestión interna de Academy for Creating Enterprise",
+        "summary": "Sistema de gestión interna de ACE para administrar estudiantes, cursos e inscripciones.",
+        "caption": "Sistema de gestión interna de ACE para administrar estudiantes, cursos e inscripciones."
+      }
+    ],
+    "labels": {
+      "Previous": "Anterior",
+      "Next": "Siguiente",
+      "Close": "Cerrar",
+      "Zoom in": "Acercar",
+      "Zoom out": "Alejar",
+      "Show thumbnails": "Mostrar miniaturas",
+      "Hide thumbnails": "Ocultar miniaturas",
+      "Thumbnails": "Miniaturas",
+      "Show captions": "Mostrar descripciones",
+      "Hide captions": "Ocultar descripciones",
+      "Caption": "Descripción",
+      "Loading": "Cargando",
+      "Error": "Error",
+      "Image": "Imagen",
+      "Slide": "Diapositiva",
+      "of": "de",
+      "Carousel": "Carrusel",
+      "Photo gallery": "Galería de fotos",
+      "Lightbox": "Visor de imágenes",
+      "{index} of {total}": "{index} de {total}"
+    }
+  },
+  "contact": {
+    "title": "Conectemos",
+    "intro": "¿No sabes cuál es el siguiente paso? Conectemos y creemos algo increíble juntos.",
+    "address": "San Pablo, ciudad de Santo Tomas, Batangas"
+  },
+  "footer": "Algunos derechos reservados.",
+  "theme": {
+    "light": "Cambiar al modo claro",
+    "dark": "Cambiar al modo oscuro"
+  },
+  "metadata": {
+    "description": "Explora el portafolio de Garry Molleno Jr., desarrollador especializado en aplicaciones web dinámicas a medida. Descubre su experiencia en tecnologías web modernas, proyectos recientes y soluciones digitales profesionales para empresas de todos los tamaños.",
+    "keywords": "Garry Molleno Jr, desarrollador web, portafolio, aplicaciones web a medida, sitios web dinámicos, soluciones digitales, desarrollo de pila completa, desarrollo de interfaces, desarrollo de servidores, habilidades, proyectos recientes, contratar desarrollador web",
+    "ogTitle": "Garry Molleno Jr. — Portafolio",
+    "siteName": "Mi portafolio en línea | Garry Molleno Jr.",
+    "imageAlt": "Imagen de portada del portafolio",
+    "locale": "es_ES"
+  }
+}

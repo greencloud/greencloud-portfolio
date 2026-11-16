@@ -1,6 +1,9 @@
 "use client";
 
+import { useLanguage } from "./LanguageProvider";
+
 export default function ThemeToggle() {
+  const { t } = useLanguage();
   function toggleTheme() {
     const root = document.documentElement;
     const theme = root.classList.contains("dark") ? "light" : "dark";
@@ -18,8 +21,8 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       className="mt-6 inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-100 px-5 py-3 font-semibold text-gray-900 shadow-sm hover:bg-gray-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-600 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700 dark:focus-visible:outline-indigo-400"
     >
-      <span className="hidden dark:inline">☀ Switch to light mode</span>
-      <span className="dark:hidden">☾ Switch to dark mode</span>
+      <span className="hidden dark:inline">☀ {t.theme.light}</span>
+      <span className="dark:hidden">☾ {t.theme.dark}</span>
     </button>
   );
 }

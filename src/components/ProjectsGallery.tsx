@@ -13,12 +13,19 @@ import "yet-another-react-lightbox/plugins/captions.css";
 
 import { projects } from "../app/data/projects";
 
+import { useLanguage } from "./LanguageProvider";
+
 export default function ProjectsGallery() {
+  const { t } = useLanguage();
+  const localizedProjects = projects.map((project, index) => ({
+    ...project,
+    ...t.gallery.projects[index],
+  }));
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
   // Lightbox slides (large images + captions)
-  const slides = projects.map((p) => ({
+  const slides = localizedProjects.map((p) => ({
     src: p.image,
     title: p.title,
     description: p.caption,
@@ -26,14 +33,13 @@ export default function ProjectsGallery() {
 
   return (
     <div className="max-w-6xl mx-auto px-6">
-      <h3 className="text-2xl font-bold mb-6">Recent Projects</h3>
+      <h3 className="text-2xl font-bold mb-6">{t.gallery.title}</h3>
       <p className="text-base text-gray-600 dark:text-gray-400 mb-6">
-        Below are some of my selected projects I built from ground up. Click a
-        project to view details.
+        {t.gallery.intro}
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {projects.map((p, i) => (
+        {localizedProjects.map((p, i) => (
           <button
             type="button"
             key={p.id}
@@ -64,6 +70,7 @@ export default function ProjectsGallery() {
       </div>
 
       <Lightbox
+        labels={t.gallery.labels}
         open={open}
         close={() => setOpen(false)}
         index={index}

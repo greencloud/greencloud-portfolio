@@ -1,11 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Footer from "../components/Footer";
+import { useLanguage } from "../components/LanguageProvider";
 import Nav from "../components/Nav";
 import ProjectsGallery from "../components/ProjectsGallery";
 import TechStack from "../components/TechStack";
 import ThemeToggle from "../components/ThemeToggle";
 
 export default function Home() {
+  const { t } = useLanguage();
   return (
     <>
       <Nav />
@@ -18,30 +22,19 @@ export default function Home() {
         <section id="about" className="pt-16 pb-12">
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="hero-copy min-w-0">
-              <h1 className="mb-4 header-title">:/Code + Create + Deliver</h1>
+              <h1 className="mb-4 header-title">{t.hero.title}</h1>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                Transforming ideas into scalable, dynamic, and user-friendly
-                platforms.
+                {t.hero.intro}
               </p>
 
               <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
-                <h2 className="text-2xl font-semibold">
-                  Hi, my name is Garry,
-                </h2>
+                <h2 className="text-2xl font-semibold">{t.hero.greeting}</h2>
                 <p className="text-2xl text-indigo-800 dark:text-indigo-300 font-medium">
-                  Full Stack Developer
+                  {t.hero.role}
                 </p>
                 <hr className="my-4" />
                 <p className="text-base text-gray-600 dark:text-gray-400">
-                  I specialize in developing custom dynamic web-based
-                  applications designed to meet the unique needs of businesses
-                  of all sizes—from small local companies to enterprise-level
-                  organizations. Leveraging my expertise in React, NEXT.js,
-                  Node.js, Express, MySQL, PostgreSQL, PHP, and Python, combined
-                  with modern front-end tools like Bootstrap, Tailwind CSS,
-                  LiquidJS, and jQuery, I create solutions that are not only
-                  visually polished but also secure, scalable, and optimized for
-                  performance.
+                  {t.hero.bio}
                 </p>
 
                 <div className="mt-4">
@@ -49,13 +42,13 @@ export default function Home() {
                     href="#connect"
                     className="inline-block px-4 py-2 bg-indigo-800 text-white font-semibold rounded-lg mr-2"
                   >
-                    Let's talk
+                    {t.hero.talk}
                   </a>
                   <a
                     href="#projects"
                     className="inline-block px-4 py-2 border border-gray-300 dark:border-gray-600 font-semibold rounded-lg"
                   >
-                    See projects
+                    {t.hero.projects}
                   </a>
                 </div>
               </div>
@@ -64,7 +57,7 @@ export default function Home() {
             <div className="relative aspect-square w-full rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-800">
               <Image
                 src="/webmaster.webp"
-                alt="Webmaster"
+                alt={t.hero.portrait}
                 sizes="(min-width: 768px) 50vw, 100vw"
                 preload
                 fill
@@ -77,12 +70,9 @@ export default function Home() {
         {/* Skills / Tools */}
         <section id="techstack" className="py-12 bg-white dark:bg-gray-900">
           <div className="max-w-6xl mx-auto px-6">
-            <h3 className="text-2xl font-bold mb-6">
-              Tech Stack: My Tools of the Trade
-            </h3>
+            <h3 className="text-2xl font-bold mb-6">{t.skills.title}</h3>
             <p className="text-base text-gray-600 dark:text-gray-400 mb-8">
-              These are some of the tools, technologies, and frameworks that
-              shape my development workflow.
+              {t.skills.intro}
             </p>
 
             <TechStack />
@@ -97,14 +87,13 @@ export default function Home() {
         {/* Contact */}
         <section id="connect" className="py-12 bg-white dark:bg-gray-900">
           <div className="max-w-3xl mx-auto px-6 text-center">
-            <h3 className="text-2xl font-bold mb-4">Let's Connect</h3>
+            <h3 className="text-2xl font-bold mb-4">{t.contact.title}</h3>
             <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
-              Stuck on what to do next? Let's connect and create something
-              amazing together.
+              {t.contact.intro}
             </p>
 
             <div className="space-y-2">
-              <p>San Pablo, Santo Tomas City, Batangas</p>
+              <p>{t.contact.address}</p>
               <p>
                 <a
                   href="mailto:greencloud@linuxmail.org"
