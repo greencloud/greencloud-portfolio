@@ -108,10 +108,10 @@ export default function Nav() {
           }}
           ref={menuRef}
           data-open={menuOpen}
-          className="mobile-navigation order-3 w-full text-base lg:order-1 lg:ml-auto lg:w-auto"
+          className="mobile-navigation order-3 w-full bg-white text-base shadow-sm dark:bg-gray-900 lg:order-1 lg:ml-auto lg:w-auto lg:shadow-none"
         >
           <div className="mobile-navigation-content">
-            <div className="flex flex-col gap-x-6 gap-y-3 pt-4 lg:flex-row lg:pt-0">
+            <div className="flex flex-col gap-x-6 gap-y-3 px-4 py-4 sm:px-6 lg:flex-row lg:p-0">
               <a href="#home" className="hover:underline">
                 {t.nav.home}
               </a>

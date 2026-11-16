@@ -116,8 +116,11 @@ section[id] {
   }
 }
 
-/* Keep the menu mounted so both opening and closing can animate. */
+/* Overlay the page so opening the sticky menu cannot trigger scroll anchoring. */
 .mobile-navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
   display: grid;
   grid-template-rows: 0fr;
   opacity: 0;
@@ -141,6 +144,7 @@ section[id] {
 
 @media (min-width: 64rem) {
   .mobile-navigation {
+    position: static;
     grid-template-rows: 1fr;
     opacity: 1;
     visibility: visible;
